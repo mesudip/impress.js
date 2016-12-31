@@ -1,32 +1,4 @@
-/*
-    So you like the style of impress.js demo?
-    Or maybe you are just curious how it was done?
 
-    You couldn't find a better place to find out!
-
-    Welcome to the stylesheet impress.js demo presentation.
-
-    Please remember that it is not meant to be a part of impress.js and is
-    not required by impress.js.
-    I expect that anyone creating a presentation for impress.js would create
-    their own set of styles.
-
-    But feel free to read through it and learn how to get the most of what
-    impress.js provides.
-
-    And let me be your guide.
-
-    Shall we begin?
-*/
-
-
-/*
-    We start with a good ol' reset.
-    That's the one by Eric Meyer http://meyerweb.com/eric/tools/css/reset/
-
-    You can probably argue if it is needed here, or not, but for sure it
-    doesn't do any harm and gives us a fresh start.
-*/
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -47,6 +19,7 @@ time, mark, audio, video {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+    text-align: center
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -74,13 +47,7 @@ table {
     border-spacing: 0;
 }
 
-/*
-    Now here is when interesting things start to appear.
 
-    We set up <body> styles with default font and nice gradient in the background.
-    And yes, there is a lot of repetition there because of -prefixes but we don't
-    want to leave anybody behind.
-*/
 body {
     font-family: 'PT Sans', sans-serif;
     min-height: 740px;
@@ -165,7 +132,7 @@ a:focus {
 
 .step {
     position: relative;
-    width: 900px;
+    width: 1000px;
     padding: 40px;
     margin: 20px auto;
 
@@ -187,7 +154,7 @@ a:focus {
 */
 .impress-enabled .step {
     margin: 0;
-    opacity: 0.3;
+    opacity: 0.2;
 
     -webkit-transition: opacity 1s;
     -moz-transition:    opacity 1s;
