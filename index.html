@@ -25,7 +25,6 @@
 </div>
 
 <div id="impress">
-
     <div id="main_title" class="step" data-x="0" data-y="0">
         <h1>64 bit Computer Architecture</h1>
         <hr />
@@ -36,17 +35,58 @@
         
     </div>
     
-    <div style=" -moz-transform:rotateZ(90deg);transform:rotatez(90deg)" id="computing_64_bit"
-     class="step" data-x="1500" data-y="0" data-z="1500" data-rotate-y="90" >
+    <div id="computing_64_bit"
+     class="step slide" data-x="1501" data-y="0" data-z="1500" data-rotate-y="90" >
         <h1>64 bit Computing</h1>
         <ul>
-            <li>Register size    - 64 bit</li>
-            <li>Data path width  - 64 bit</li>
-            <li>Integer size     - 64 bit</li>
+            <li>Register size(int)    - 64 bit</li>
+            <li>Data path width       - 64 bit</li>
+            <li>Integer size          - 64 bit</li>
             <li>Code has 64 bit virtual memory addresses</li>
             <li>Memory address width - 64 bit</li>
         </ul>       
     </div>
+    <div class="step slide" data-x="1500" data-y="0" data-z="1500" data-rotate-y="-90">
+        <h1>Usage History</h1>
+        <ul>
+            <li>In supercomputers. eg (Cray-1) 1975</li>
+            <li>In RISC based workstations and servers. Eg. MIPS R4000, R8000, Power3 etc</li>
+            <li>In PCs introduced as x86-64 processors since 2003<li>
+            <li>The ARM architecture targeting smartphones eg iPhone 5S released on September 20, 2013</li>
+        </ul>
+    </div>
+    <div class="step" data-x="1500" data-y="0" data-z="1500" data-rotate-y="-90" data-rotate-z="90">
+        <h1>Major components of processor</h1>
+        <ul>
+            <li>General register unit</li>
+            <li>Control and decoding unit</li>
+            <li>Bus unit</li>
+            <li>Cache memory unit</li>
+            <li>Floating point register unit</li>
+            <li>Issue ports</li>
+        </ul>
+    </div>
+    <div class="step">
+        <h1>New Instructions</h1>
+        <ul>
+            <li>Load Reserved             - LRC, LRVR</li>
+            <li>Multiply Logical          - ML, MLR</li>
+            <li>Divide Logical            - DL, DLR</li>
+            <li>Add Logical w/Carry       - ALC</li>
+            <li>Subtract Logical w/Borrow - SLB</li>
+            <li>Store Reserved            - STRV</li>
+            <li>Rotate Left Single Logical- RRL</li>
+        </ul>
+    </div>
+    <div>
+        <h1> Advantage</h1>
+        <ul>
+            <li> 64-bit processors have 64 bit data lines</li>
+            <li> Speed and execution is both faster in 64-bit processors</li>
+            <li> 64 bit cpu executing in 32 bit mode is faster </li>
+        </ul>
+    </div>
+
 </div>
 <script>
 if ("ontouchstart" in document.documentElement) { 
