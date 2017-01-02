@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 
 <html lang="en">
 <head>
@@ -25,49 +25,72 @@
 </div>
 
 <div id="impress">
-    <div id="main_title" class="step" data-x="0" data-y="0">
+    <div id="s1_main_title" class="step" data-x="0" data-y="0" style="background-color:lightslategrey">
         <h1>64 bit Computer Architecture</h1>
         <hr />
-        <img src="images/intel.jpeg" />  
-        <img src="images/amd.jpg" />
-        <p style="text-align: right">Presenter</p>
-        <p Style="text-align: right">Sudip Bhattarai</p>
+        <div>
+            <img style="float:left" src="images/intel.jpeg" />
+            <img style="align-content:space-around" src="images/amd.jpg" />
+        </div>
+        <div>
+            <p style="text-align: right">Presenter</p>
+            <p Style="text-align: right">Sudip Bhattarai</p>
+        </div>
         
     </div>
     
-    <div id="computing_64_bit"
-     class="step slide" data-x="1501" data-y="0" data-z="1500" data-rotate-y="90" >
-        <h1>64 bit Computing</h1>
-        <ul>
-            <li>Register size(int)    - 64 bit</li>
-            <li>Data path width       - 64 bit</li>
-            <li>Integer size          - 64 bit</li>
-            <li>Code has 64 bit virtual memory addresses</li>
-            <li>Memory address width - 64 bit</li>
+    <div id="s2_computing_64_bit"
+     class="step slide listed" data-x="1501" data-y="0" data-z="1500" data-rotate-y="90" >
+        <h1 style="font-size:300%">64 bit Computing</h1>
+        <ul style="font-size:200%; padding-top:100px">
+            <li style="padding:25px;">Register size(int)    - 64 bit</li>
+            <li style="padding:25px;">Data path width       - 64 bit</li>
+            <li style="padding:25px;">Integer size          - 64 bit</li>
+            <li style="padding:25px;">Code has 64 bit virtual memory addresses</li>
+            <li style="padding:25px;">Memory address width - 64 bit</li>
         </ul>       
     </div>
-    <div class="step slide" data-x="1500" data-y="0" data-z="1500" data-rotate-y="-90">
-        <h1>Usage History</h1>
-        <ul>
-            <li>In supercomputers. eg (Cray-1) 1975</li>
-            <li>In RISC based workstations and servers. Eg. MIPS R4000, R8000, Power3 etc</li>
-            <li>In PCs introduced as x86-64 processors since 2003<li>
-            <li>The ARM architecture targeting smartphones eg iPhone 5S released on September 20, 2013</li>
+    <div id="s3_history" class="step slide listed" data-x="1500" data-y="0" data-z="1500" data-rotate-y="-90" data-rotate-z="180">
+        <h1 style="font-size:300%">History</h1>
+        <ul style="font-size:150%; padding-top:100px">
+            <li style="padding:25px;">In supercomputers. eg (Cray-1) 1975</li>
+            <li style="padding:25px;">In RISC based workstations and servers. Eg. MIPS R4000, R8000, Power3 etc</li>
+            <li style="padding:25px;">In PCs introduced as x86-64 processors since 2003</li>
+            <li style="padding:25px;">The ARM architecture targeting smartphones eg iPhone 5S released on September 20, 2013</li>
         </ul>
     </div>
-    <div class="step" data-x="1500" data-y="0" data-z="1500" data-rotate-y="-90" data-rotate-z="90">
-        <h1>Major components of processor</h1>
-        <ul>
-            <li>General register unit</li>
-            <li>Control and decoding unit</li>
-            <li>Bus unit</li>
-            <li>Cache memory unit</li>
-            <li>Floating point register unit</li>
-            <li>Issue ports</li>
-        </ul>
+    <div id="s3_5_block_diagram" class="step" data-x="-900" data-x="-1000"  data-z="-1700" data-rotate-y="0" data-rotate-z="0">
+        <h1>Block Diagram</h1>
+        <img style="height:700px"src="images/block_diagram.png" />
     </div>
-    <div class="step">
+    <div id="s4_components" class="step" data-x="0" data-x="-1500" data-z="-1500" data-rotate-y="-30" data-rotate-z="0">
+        <h1 style="font-size:150%">Major Blocks of Processor</h1>
+    </div>
+    <div class="step" data-x="0" data-x="-1500" data-y="100" data-z="-1400" data-rotate-y="15" data-rotate-z="0">
+        General register unit
+    </div>
+    <div class="step" data-x="0" data-x="-1800" data-y="200" data-z="-1200" data-rotate-y="30" data-rotate-z="0">
+        Control and decoding unit
+    </div>
+    <div class="step" data-x="0" data-x="-2100" data-y="300" data-z="-1000" data-rotate-y="45" data-rotate-z="0">
+        Bus unit
+    </div>
+    <div class="step" data-x="0" data-x="-2400" data-y="400" data-z="-800" data-rotate-y="60" data-rotate-z="0">
+        Cache memory unit
+    </div>
+    <div class="step" data-x="0" data-x="-2700" data-y="500" data-z="-600" data-rotate-y="75" data-rotate-z="0">
+        Floating point register unit
+    </div>
+    <div class="step" data-x="0" data-x="-3000" data-y="600" data-z="-400" data-rotate-y="90" data-rotate-z="0">
+        Issue ports
+    </div>
+    
+
+
+    <div class="step listed" data-x="1500" data-y="0" data-z="0"  data-rotate-y="-10" data-rotate-z="-90"
+         style="width:600px;">
         <h1>New Instructions</h1>
+        <hr />
         <ul>
             <li>Load Reserved             - LRC, LRVR</li>
             <li>Multiply Logical          - ML, MLR</li>
@@ -78,15 +101,63 @@
             <li>Rotate Left Single Logical- RRL</li>
         </ul>
     </div>
-    <div>
+    <div class="step listed" data-x="1500" data-y="1500" data-z="1500"  data-rotate-y="20" >
         <h1> Advantage</h1>
         <ul>
-            <li> 64-bit processors have 64 bit data lines</li>
+            <li> 64-bit processors have 64 bit data lines (2^64 possible values and access to 16,77,216 TB physical memory directly)</li>
             <li> Speed and execution is both faster in 64-bit processors</li>
-            <li> 64 bit cpu executing in 32 bit mode is faster </li>
+            <li> 64 bit cpu executing in 32 bit program is faster compared to 32 bit cpu</li>
+	    <li> Larger virtual memory is available for programs</li>
+        </ul>
+    </div >
+    <div class="step listed" data-x="1800" data-y="2000" data-z="3000"  data-rotate-y="-20">
+        <h1>Disadvangages</h1>
+        <ul>
+            <li>
+                Compared to x86 processors, pointers are double the size. This increases the memory required by 64 bit programs.
+            </li>
+		<li> More virtual memory is required for application running in 64 bit environment</li>
         </ul>
     </div>
-
+    <div id="register_set" class="step" data-x="1800" data-y="2000" data-z="3000"  data-rotate-y="70" >
+        <h1>
+            Programmable Register Set
+        </h1>
+        <img src="images/64registerset.jpg" />
+    </div>
+    <div  class="step" style="width:600px" id="hello_world" data-x="-2000" data-y="2000" data-z="3000"  data-rotate-y="70">
+        <h1>HelloWorld64.asm</h1>
+        <div style="font-size:16px;text-align:left">
+            <pre style="text-align:left">
+                <code style="text-align:left" class="gd">
+        extern	printf		; the C function, to be called
+        section .data		
+        msg:	db "Hello world", 0	
+        fmt:    db "%s", 10, 0          ; The printf format, "\n",'0'
+        section .text           ; Code section.
+        global main		; the standard gcc entry point
+        main:				; the program label for the entry point
+        push    rbp		; set up stack frame, must be alligned
+        mov	rdi,fmt
+        mov	rsi,msg
+        mov	rax,0		
+        call    printf		; Call C function
+        pop	rbp		; restore stack
+        mov	rax,0		; normal, no error, return value
+        ret			; return
+    </code> 
+            </pre>
+       </div>
+    </div>
+    <div class="step" id="slide_reference" data-x="-2500" data-y="2000" data-z="3000"  data-rotate-y="160">
+	<h1>Thank You!<h1>
+	<p>&nbsp;</p>
+	<p>Any Questions?</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p style="font-size:16px" >Powered by: Impress.js (https://github.com/impress/impress.js)</p>	
+	<p style="font-size:16px" >Source code of presentation available at: https://github.com/mesudip/impress.j </p>	
+    </div>
 </div>
 <script>
 if ("ontouchstart" in document.documentElement) { 
